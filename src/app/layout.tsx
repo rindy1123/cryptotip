@@ -15,12 +15,12 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen w-screen">
         <Web3Provider>
           <Header />
-          <div className="flex justify-center items-center h-screen">
+          <main className="flex flex-1 justify-center items-center">
             {children}
-          </div>
+          </main>
         </Web3Provider>
       </body>
     </html>
