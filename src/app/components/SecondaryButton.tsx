@@ -7,7 +7,7 @@ export const SecondaryButton = ({
 }) => {
   return (
     <button
-      className="bg-slate-700 p-2 rounded-full cursor-pointer hover:bg-slate-800"
+      className="bg-slate-700 p-2 rounded-full font-semibold cursor-pointer hover:bg-slate-800"
       onClick={onClick}
     >
       {text}

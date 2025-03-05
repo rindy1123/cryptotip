@@ -7,7 +7,7 @@ export const PrimaryButton = ({
 }) => {
   return (
     <button
-      className="bg-indigo-700 p-2 rounded-full cursor-pointer hover:bg-indigo-800"
+      className="bg-emerald-700 text-lg font-semibold p-2 rounded-full cursor-pointer hover:bg-emerald-800"
       onClick={onClick}
     >
       {text}

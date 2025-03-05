@@ -10,6 +10,7 @@ export const Header = () => {
     <>
       <header className="p-3 flex justify-between">
         <div>
+          {/*TODO: Logo */}
           <h1 className="text-2xl font-bold">Cryptotip</h1>
         </div>
         <div>
