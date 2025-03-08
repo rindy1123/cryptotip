@@ -18,7 +18,7 @@ export default function Home() {
     return (
       <div className="flex flex-col w-2/3">
         <h2 className="lg:text-6xl md:text-4xl text-3xl font-bold mb-6">
-          Empower Your Content with Cryptotips
+          Empower Your Content with Cryptotip
         </h2>
         <div className="mb-8 text-xl leading-relaxed">
           <p>
@@ -47,7 +47,11 @@ export default function Home() {
           </p>
         </div>
         <div className="flex-none">
-          <PrimaryButton text="Connect Wallet" onClick={() => open()} />
+          <PrimaryButton
+            type="button"
+            text="Connect Wallet"
+            onClick={() => open()}
+          />
         </div>
       </div>
     );
