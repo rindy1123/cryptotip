@@ -14,13 +14,12 @@ export const Transaction = () => {
   const [failed, setFailed] = useState(false);
   const { data: hash, sendTransaction } = useSendTransaction();
 
-  // TODO: Fallback pages
   if (!to) {
-    return <div>Invalid URL</div>;
+    return <div className="text-xl">Address Not Found</div>;
   }
 
   if (!isAddress(to)) {
-    return <div>Invalid Address</div>;
+    return <div className="text-xl">Invalid Address</div>;
   }
 
   function submit(e: React.FormEvent<HTMLFormElement>, to: Address) {

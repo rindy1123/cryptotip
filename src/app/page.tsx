@@ -8,15 +8,19 @@ import { Copy } from "./components/Copy";
 import { Check } from "./components/Check";
 import { cssAttributesToString } from "@/utils/css";
 import Image from "next/image";
+import { Loading } from "./components/Loading";
 
 export default function Home() {
   const { open } = useAppKit();
-  // TODO: Loading spinner
-  const { address, isConnected } = useAppKitAccount();
+  const { address, status } = useAppKitAccount();
   const [copied, setCopied] = useState(false);
-  if (!isConnected) {
+  if (status === "connecting" || status === "reconnecting") {
+    return <Loading />;
+  }
+
+  if (status === "disconnected") {
     return (
-      <div className="flex flex-col w-2/3">
+      <div className="flex flex-col w-2/3 text-zinc-300">
         <h2 className="lg:text-6xl md:text-4xl text-3xl font-bold mb-6">
           Empower Your Content with Cryptotip
         </h2>
