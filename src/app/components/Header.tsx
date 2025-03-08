@@ -1,6 +1,8 @@
 "use client";
 import { useAppKitAccount, useDisconnect } from "@reown/appkit/react";
 import { SecondaryButton } from "./SecondaryButton";
+import Logo from "../../../public/logo.png";
+import Image from "next/image";
 
 export const Header = () => {
   const { isConnected } = useAppKitAccount();
@@ -9,9 +11,8 @@ export const Header = () => {
   return (
     <>
       <header className="p-3 flex justify-between">
-        <div>
-          {/*TODO: Logo */}
-          <h1 className="text-2xl font-bold">Cryptotip</h1>
+        <div className="m-1">
+          <Image src={Logo} width={160} alt="Cryptotip Logo" />
         </div>
         <div>
           {isConnected && (

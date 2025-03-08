@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_HOST,
   basePath: "",
   trailingSlash: true,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
