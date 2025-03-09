@@ -1,4 +1,4 @@
-# Cryptotip
+# Tipcryp
 
 ## Development
 
