@@ -5,7 +5,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tipcryp",
+  title: "TipCryp",
   description:
     "Connect with your audience like never before. Our platform enables creators, artists, and influencers to receive cryptocurrency tips directly from their supporters and fans.",
 };
